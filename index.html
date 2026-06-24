@@ -1,159 +1,109 @@
-<!DOCTYPE HTML>
-<!--
-	t.s.helianthus
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
+<!doctype html>
+<html lang="zh-CN">
 	<head>
-		<title>t.s.helianthus</title>
 		<meta charset="utf-8" />
+		<script>
+			(function() {
+				const theme = localStorage.getItem('site_theme') || (window.matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark');
+				document.documentElement.setAttribute('data-theme', theme);
+			})();
+		</script>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
-		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<meta name="description" content="HELIANTHUS 的个人介绍页：数据工具、自动化应用、文档系统、可视化和个人项目。" />
+		<title>HELIANTHUS</title>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
-		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 	</head>
 	<body>
-
-		<!-- Page Wrapper -->
-			<div id="page-wrapper">
-
-				<!-- Header -->
-					<header id="header" class="alt">
-						<h1><a href="index.html">t.s.helianthus</a></h1>
-						<nav>
-							<a href="#menu">Menu</a>
-						</nav>
-					</header>
-
-				<!-- Menu -->
-					<nav id="menu">
-						<div class="inner">
-							<h2>Menu</h2>
-							<ul class="links">
-								<li><a href="index.html">Home</a></li>
-								<li><a href="http://helianthus-code.lofter.com/">Data</a></li>
-								<li><a href="http://helianthus-draw.lofter.com/">Draw</a></li>
-								<li><a href="http://helianthus-photo.lofter.com/">Photo</a></li>
-
-							</ul>
-							<a href="#" class="close">Close</a>
-						</div>
-					</nav>
-
-				<!-- Banner -->
-					<section id="banner">
-						<div class="inner">
-							<!-- <div class="logo"><span class="icon fa-diamond"></span> /div>--> 
-							<h2>t.s.helianthus</h2>
-							<p>被数据搞,被稿子虐</p>
-						</div>
-					</section>
-
-				<!-- Wrapper -->
-					<section id="wrapper">
-
-						<!-- One -->
-							<section id="one" class="wrapper spotlight style1">
-								<div class="inner">
-									<a href="http://helianthus-code.lofter.com/" class="image"><img src="http://imglf2.nosdn.127.net/img/RnE5aTRnNGlHc2Z0dmtpVHJZZkwwYXRUV0RVVUNQc2JDQ05lNGhwUzl1R2w3OWV0SWg4OEd3PT0.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Data analysis</h2>
-										<p>Code: R / Python </br>
-										Data: MysQL</br>
-										Space: Arcgis / Mapbox / Cartodb</br>
-										Visualization: ggplot2 / d3</p>
-										<a href="http://helianthus-code.lofter.com/" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
-
-						<!-- Two -->
-							<section id="two" class="wrapper alt spotlight style2">
-								<div class="inner">
-									<a href="http://helianthus-draw.lofter.com/" class="image"><img src="http://imglf0.ph.126.net/3QOBNZHF9G1pmrWgIpvwPw==/6630764300490489231.jpg" alt="" /></a>
-									<div class="content">
-										<h2 class="major">Draw</h2>
-										<p>Ps / Ai</p>
-										<a href="http://helianthus-draw.lofter.com/" class="special">Learn more</a>
-									</div>
-								</div>
-							</section>
-
-						<!-- Four -->
-							<section id="three" class="wrapper alt style1">
-								<div class="inner">
-									<h2 class="major">Visual</h2>
-									<section class="features">
-										<article>
-											<a href="echarts/GDP-Raise.html" class="image"><img src="images/data/cityGDP.png" alt="" /></a>
-											<h3 class="major">GDPs of city in Zhejiang</h3>
-										</article>
-																		
-									</section>
-									<ul class="actions">
-										<li><a href="http://helianthus-photo.lofter.com/" class="button">Browse All</a></li>
-									</ul>
-								</div>
-							</section>
-
-
-							<section id="four" class="wrapper alt style1">
-								<div class="inner">
-									<h2 class="major">Track</h2>
-									<section class="features">
-										<article>
-											<a href="#" class="image"><img src="http://imglf.nosdn.127.net/img/RnE5aTRnNGlHc2Q0dWRpK05MMEthWG9HdElqVUJmYnFhZ2hkV0JEcjY5RmdGOFFzNGlVS1dRPT0.jpg" alt="" /></a>
-											<h3 class="major">N39°56′ E116°20′</h3>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="http://imglf1.ph.126.net/FPaUy1LSuoI2t68b8LWVQA==/6630658747373340715.jpg" alt="" /></a>
-											<h3 class="major">N28°0′ E120°39′37.48″</h3>
-										</article>
-										<article>
-											<a href="#" class="image"><img src="http://imglf0.nosdn.127.net/img/RnE5aTRnNGlHc2VPVzV4V0hOZzZXOXJYV1oyb1dUQnQ4UWkwTkoyL3ViTU11ckk4UG0vRUd3PT0.jpg" alt="" /></a>
-											<h3 class="major">N31°11′ E121°29′</h3>
-										</article>
-
-										<article>
-											<a href="#" class="image"><img src="http://imglf0.nosdn.127.net/img/RnE5aTRnNGlHc2MwRkxnTU5yRXBPR2dCSVE3bkFKRm5rT0M4Q2x3NHRFUXNVbHNQdW4xZlZ3PT0.jpg" alt="" /></a>
-											<h3 class="major">N32°03′ E118°46′</h3>
-										</article>
-									
-									</section>
-									<ul class="actions">
-										<li><a href="http://helianthus-photo.lofter.com/" class="button">Browse All</a></li>
-									</ul>
-								</div>
-							</section>
-
-					</section>
-
-				<!-- Footer -->
-					<section id="footer">
-						<div class="inner">
-							<ul class="contact">
-								<li class="fa-home">
-									N31°13′50 E121°28′14
-								</li>
-								<li class="fa-envelope"><a href="#">t.s.helianthus@outlook.com</a></li>
-							</ul>
-							<ul class="copyright">
-								<li>&copy; Untitled Inc. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-							</ul>
-						</div>
-					</section>
-
+		<noscript>
+			<div style="background: #10b981; color: #022c22; padding: 1rem; text-align: center; font-weight: 700; font-family: sans-serif; font-size: 0.95rem; border-bottom: 1px solid rgba(255, 255, 255, 0.1);">
+				检测到您的浏览器禁用了 JavaScript。为了获得最佳的设计展现与交互体验，建议您开启 JavaScript。
 			</div>
+		</noscript>
+		<header class="site-header">
+			<a class="brand" href="#top" aria-label="HELIANTHUS home">
+				<span class="brand-mark">H</span>
+				<span data-text="meta.title">HELIANTHUS</span>
+			</a>
+			<nav class="nav-links" aria-label="Primary navigation">
+				<!-- Dynamically generated by render.js -->
+			</nav>
+		</header>
 
-		<!-- Scripts -->
-			<script src="assets/js/skel.min.js"></script>
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
-			<script src="assets/js/main.js"></script>
+		<main id="top">
+			<section class="hero section">
+				<div class="hero-copy">
+					<p class="eyebrow" data-text="hero.eyebrow"></p>
+					<h1 data-text="hero.title"></h1>
+					<p class="lead" data-text="hero.lead"></p>
+					<div class="hero-actions" aria-label="Primary actions">
+						<!-- Dynamically generated by render.js -->
+					</div>
+				</div>
+			</section>
 
+			<section id="outcomes" class="section">
+				<div class="section-heading compact">
+					<p class="eyebrow" data-text="outcomes.eyebrow"></p>
+					<h2 data-text="outcomes.title"></h2>
+					<p data-text="outcomes.lead"></p>
+				</div>
+
+				<div class="outcomes-grid">
+					<!-- Dynamically generated by render.js -->
+				</div>
+			</section>
+
+			<section id="skills" class="section split-section">
+				<div>
+					<p class="eyebrow" data-text="skills.eyebrow"></p>
+					<h2 data-text="skills.title"></h2>
+					<p data-text="skills.lead"></p>
+				</div>
+				<div class="skill-panel">
+					<!-- Dynamically generated by render.js -->
+				</div>
+			</section>
+
+			<section id="oss" class="section">
+				<div class="section-heading compact">
+					<p class="eyebrow" data-text="oss.eyebrow"></p>
+					<h2 data-text="oss.title"></h2>
+					<p data-text="oss.lead"></p>
+				</div>
+				<div class="oss-grid">
+					<!-- Dynamically generated by render.js -->
+				</div>
+			</section>
+
+			<section id="about" class="section split-section">
+				<div>
+					<p class="eyebrow" data-text="about.eyebrow"></p>
+					<h2 data-text="about.title"></h2>
+					<p data-text="about.lead"></p>
+				</div>
+				<div class="timeline-container">
+					<!-- Dynamically generated by render.js -->
+				</div>
+			</section>
+
+
+		</main>
+
+		<footer id="contact" class="site-footer">
+			<div>
+				<p class="eyebrow" data-text="footer.eyebrow"></p>
+				<h2 data-text="footer.title"></h2>
+				<p class="footer-coords font-mono" data-text="footer.coords"></p>
+			</div>
+			<div class="footer-links">
+				<!-- Dynamically generated by render.js -->
+			</div>
+		</footer>
+
+		<script src="assets/js/content.js"></script>
+		<script src="assets/js/render.js"></script>
 	</body>
 </html>
