@@ -262,6 +262,36 @@ function renderContent(data) {
     });
   }
 
+  // 11. Notes grid rendering
+  const notesGrid = document.querySelector('.notes-grid');
+  if (notesGrid && data.notes && data.notes.items) {
+    notesGrid.innerHTML = '';
+    data.notes.items.forEach(item => {
+      const card = document.createElement('a');
+      card.className = 'note-card';
+      card.href = item.url;
+      card.target = '_blank';
+      card.rel = 'noopener';
+      card.innerHTML = `
+        <div class="note-card-meta">
+          <span class="note-tag">${item.tag}</span>
+          <span class="note-date">${item.date}</span>
+        </div>
+        <h3>${item.title}</h3>
+        <p>${item.excerpt}</p>
+        <span class="note-read-more">Read on Hashnode →</span>
+      `;
+      notesGrid.appendChild(card);
+    });
+  }
+
+  // Update notes "more" link text
+  const notesMoreLink = document.getElementById('notes-more-link');
+  if (notesMoreLink && data.notes && data.notes.more) {
+    notesMoreLink.href = data.notes.more.href;
+    notesMoreLink.textContent = data.notes.more.text;
+  }
+
   // 12. Footer links
   const footerLinksContainer = document.querySelector('.footer-links');
   if (footerLinksContainer && data.footer && data.footer.links) {

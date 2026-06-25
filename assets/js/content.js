@@ -5,16 +5,17 @@ window.siteContent = {
       "description": "HELIANTHUS 的个人介绍页：数据工具、自动化应用、文档系统、可视化和个人项目。"
     },
     "nav": [
+      {"href": "#oss", "text": "Open Source"},
+      {"href": "#notes", "text": "Notes"},
       {"href": "#outcomes", "text": "Projects"},
       {"href": "#skills", "text": "Skills"},
-      {"href": "#oss", "text": "Open Source"},
       {"href": "#about", "text": "Experience"},
       {"href": "#contact", "text": "Contact"}
     ],
     "hero": {
       "eyebrow": "HELLO WORLD,",
       "title": "把数据作为方法。",
-      "lead": "在城市数据研究与应用领域深耕多年。从数据记者、数据分析师到数据产品经理，我专注于将多源数据转化为驱动决策的商业平台与深度的行业见解。",
+      "lead": "数据是我与世界交互的方法。先看见问题，再谈解法。",
       "actions": [
         {"href": "https://github.com/tshelianthus", "text": "GitHub", "primary": true},
         {"href": "mailto:t.s.helianthus@outlook.com", "text": "Email", "primary": false}
@@ -119,6 +120,35 @@ window.siteContent = {
         }
       ]
     },
+    "notes": {
+      "eyebrow": "Writing",
+      "title": "Notes",
+      "lead": "记录观察、工具和判断过程。",
+      "more": {"href": "https://wasteland.hashnode.dev/", "text": "查看全部 →"},
+      "items": [
+        {
+          "tag": "Data / Benchmark",
+          "date": "2026-04",
+          "title": "DuckDB in the Wild: What 6 Minutes of Benchmarking Across 4 Machines Taught Me",
+          "excerpt": "同一条查询，四台机器，不同存储。数字很混乱，比较也不公平——但出奇地有用。",
+          "url": "https://wasteland.hashnode.dev/duckdb-in-the-wild-what-6-minutes-of-benchmarking-across-4-machines-taught-me-about-real-world-performance"
+        },
+        {
+          "tag": "Engineering / Stack",
+          "date": "2026-04",
+          "title": "From Zero to One: How I Built a Lean Data Stack with Dagster, DuckDB, and S3",
+          "excerpt": "一个人，从零搭出一套完整的轻量数据栈。关于工具选择与取舍的实战记录。",
+          "url": "https://wasteland.hashnode.dev/from-zero-to-one-how-i-built-a-lean-data-stack-with-dagster-duckdb-and-s3-compatible-object-storage"
+        },
+        {
+          "tag": "Tooling / BI",
+          "date": "2025-01",
+          "title": "DuckDB × Metabase × Object Storage",
+          "excerpt": "用 Docker 把 DuckDB 接入 Metabase，直连 S3 数据，搭出一套极简 BI 环境。",
+          "url": "https://wasteland.hashnode.dev/duckdbmetabase"
+        }
+      ]
+    },
     "footer": {
       "eyebrow": "Contact",
       "title": "与我联系",
@@ -135,16 +165,17 @@ window.siteContent = {
       "description": "HELIANTHUS Personal Profile: Data tools, automation apps, documentation systems, visualization, and personal projects."
     },
     "nav": [
+      {"href": "#oss", "text": "Open Source"},
+      {"href": "#notes", "text": "Notes"},
       {"href": "#outcomes", "text": "Projects"},
       {"href": "#skills", "text": "Skills"},
-      {"href": "#oss", "text": "Open Source"},
       {"href": "#about", "text": "Experience"},
       {"href": "#contact", "text": "Contact"}
     ],
     "hero": {
       "eyebrow": "HELLO WORLD,",
       "title": "Data as a Method.",
-      "lead": "Years of deep cultivation in the field of urban data research and applications. From a data journalist and data analyst to a data product manager, I focus on transforming multi-source data into commercial platforms and deep industry insights that drive decision-making.",
+      "lead": "Data is the method through which I interact with the world. See the problem first. Talk solutions second.",
       "actions": [
         {"href": "https://github.com/tshelianthus", "text": "GitHub", "primary": true},
         {"href": "mailto:t.s.helianthus@outlook.com", "text": "Email", "primary": false}
@@ -246,6 +277,35 @@ window.siteContent = {
           "tech": "TypeScript",
           "desc": "A task organization and action exploration tool designed for lightweight workflows, focusing on dynamic construction of task chains.",
           "status": "WIP"
+        }
+      ]
+    },
+    "notes": {
+      "eyebrow": "Writing",
+      "title": "Notes",
+      "lead": "Recording observations, tools, and the decision process.",
+      "more": {"href": "https://wasteland.hashnode.dev/", "text": "View all →"},
+      "items": [
+        {
+          "tag": "Data / Benchmark",
+          "date": "2026-04",
+          "title": "DuckDB in the Wild: What 6 Minutes of Benchmarking Across 4 Machines Taught Me",
+          "excerpt": "Same query, four machines, different storage. The numbers are messy, the comparisons unfair — and yet surprisingly useful.",
+          "url": "https://wasteland.hashnode.dev/duckdb-in-the-wild-what-6-minutes-of-benchmarking-across-4-machines-taught-me-about-real-world-performance"
+        },
+        {
+          "tag": "Engineering / Stack",
+          "date": "2026-04",
+          "title": "From Zero to One: How I Built a Lean Data Stack with Dagster, DuckDB, and S3",
+          "excerpt": "One person. One lean stack. A practical record of tool choices, trade-offs, and what actually shipped.",
+          "url": "https://wasteland.hashnode.dev/from-zero-to-one-how-i-built-a-lean-data-stack-with-dagster-duckdb-and-s3-compatible-object-storage"
+        },
+        {
+          "tag": "Tooling / BI",
+          "date": "2025-01",
+          "title": "DuckDB × Metabase × Object Storage",
+          "excerpt": "Connecting DuckDB to Metabase via Docker, querying S3 directly — a minimal BI setup that just works.",
+          "url": "https://wasteland.hashnode.dev/duckdbmetabase"
         }
       ]
     },
